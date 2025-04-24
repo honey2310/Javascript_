@@ -7,23 +7,24 @@
 </head>
 <body>
     
+      <script>
+        // 1. wap to check num is +,-,0 using nested if else.
 
-    <script>
-        // WAP TO CHECK THE VOTING ELIGIBILITY OF USER.
+         let number = -23;
 
-        let age = -11;
+         if(number>=0){
+            //  0,+
+            if(number>0){
+                console.log("Number is positive");
+            }else{
+                console.log("Number is neutral");
+            }
+         }else{
+             console.log("Number is negative")
+         }
 
-        if(age>=18){
-            document.writeln("You are eligible for vote");
-        } else if(age==0){
-            document.writeln("Please enter valid age!!")
-        } else if(age<0){
-            document.writeln("Negative age is not allow")
-        }else{
-            document.writeln("You are not eligible for vote")
-        }
+      </script>
 
-    </script>
 
 </body>
 </html>
