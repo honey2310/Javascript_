@@ -1,0 +1,3 @@
+/ wap to print 10 to 1 using while loop
+// wap to print only even numbers from 10 to 1.
+// wap to print number from n1 to n2.
