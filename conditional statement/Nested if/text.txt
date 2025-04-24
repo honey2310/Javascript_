@@ -1,0 +1,4 @@
+// 1. wap to check num is +,-,0 using nested if else.
+// 2. wap to check user eligible for vote or not using nested if else.
+// 3. wap to find max number from 3 user input variables.
+// 4. wap to fid min number from 4      " " " ".
