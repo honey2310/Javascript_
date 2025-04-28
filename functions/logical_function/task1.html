@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // wap will print the factorial of the passed number in UDF.
+      //   5*4*3*2*1
+
+      function factorial(n) {
+        let num = 1;
+        for (let i = 1; i <= n; i++) {
+          // n=5
+          num = num * i; // num = 24*5 = 120
+        }
+        return num;
+      }
+
+      let num = factorial(6);
+      document.writeln(num);
+    </script>
+  </body>
+</html>
