@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // wap to find the Minimum element of array using method.
+
+      let numbers = [4, 9, 2, 11, 7];
+
+      let min = numbers[0]; // Start by assuming the first element is the Minimum
+
+      numbers.map((num) => {
+        // num = [4,9,2,11,7]
+        if (num < min) {
+        // 7<2
+          min = num; // If current number is greater than min, update min
+        }
+      });
+
+      document.writeln("Minimum element is: ", min);
+
+
+      document.writeln("<br>")
+
+      // wap to find Minimum element of array without using method.
+
+      let array = [23, 56, 78, 34, 66];
+
+      let ans = Math.min(...array);
+      document.writeln("Minimum number is: " + ans);
+    </script>
+  </body>
+</html>

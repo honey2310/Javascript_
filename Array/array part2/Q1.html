@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // wap to find the maximum element of array using method.
+
+      // let numbers = [4, 9, 2, 11, 7];
+
+      let max = numbers[0]; // Start by assuming the first element is the maximum
+
+      numbers.map((num) => {
+        // num = [4,9,2,11,7]
+        if (num > max) {
+          // 7>11
+          max = num; // If current number is greater than max, update max
+        }
+      });
+
+      document.writeln("Maximum element is: ", max);
+
+      document.writeln("<br>")
+
+      // wap to find maximum element of array without using method.
+
+      let array = [23, 56, 78, 34, 66];
+
+      let ans = Math.max(...array);
+      document.writeln("Maximum number is: " + ans);
+
+    </script>
+  </body>
+</html>
