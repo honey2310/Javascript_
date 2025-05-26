@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function palimdore() {
+        let num = 1331;
+
+        let real = num; // 12 , 1
+
+        let p = 0;
+
+        while (num > 0) {
+          let temp = num % 10; // 3 , 2 , 1
+
+          p = p * 10 + temp; // 3*10 = 30 +2= 32   32*10=320+1 =321 // p=32
+
+          num = Math.floor(num / 10); // 1
+        }
+
+        document.writeln(p);
+
+        if (real == p) {
+          document.writeln("number is palimdrone");
+        } else {
+          document.writeln("number is not palimdrone");
+        }
+      }
+
+      palimdore();
+    </script>
+  </body>
+</html>
