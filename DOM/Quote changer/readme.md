@@ -17,6 +17,10 @@ A simple web application that displays random inspirational quotes at the click 
 
 
 
+https://github.com/user-attachments/assets/332400c3-2107-4602-a712-2a6039dceea4
+
+
+
 ### 🚀 Live Demo
 
 > You can host your project on GitHub Pages or Netlify and add your live link here.
