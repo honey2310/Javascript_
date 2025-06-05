@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Note App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(to right, #f6d365, #fda085);
+        font-family: "Segoe UI", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .note-card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        width: 350px;
+        text-align: center;
+      }
+
+      .note-card h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      #note-input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1.5px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        outline: none;
+      }
+
+      #add-note-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #ff7e5f;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #add-note-btn:hover {
+        background-color: #e66a4e;
+      }
+
+      .notes-list {
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .note {
+        background: #fff9ec;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-left: 5px solid #f6a300;
+        border-radius: 8px;
+        font-size: 15px;
+        color: #5c4200;
+        position: relative;
+        margin-top: 15px;
+      }
+
+      .note::before {
+        content: "📝";
+        margin-right: 8px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="note-card">
+      <h2>🗒️ My Notes</h2>
+      <input type="text" id="note-input" placeholder="Type a note..." />
+      <button id="add-note-btn">Add Note</button>
+      <div class="note"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
