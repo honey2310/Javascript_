@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .todo-container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
