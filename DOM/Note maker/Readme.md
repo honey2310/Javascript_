@@ -12,6 +12,11 @@ A simple and responsive web-based Note Maker that allows users to create, edit, 
 
 ## 📸 Demo
 
+
+https://github.com/user-attachments/assets/27a81a39-742e-4bbb-9638-a21d58f16c49
+
+
+
 ```
 
 ## 🛠️ Built With
