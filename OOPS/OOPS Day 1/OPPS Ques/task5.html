@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class BankAccount {
+            #balance
+
+            constructor(){
+                this.#balance=0
+            }
+            deposit(amount) {
+                this.#balance+=amount
+            }
+
+            withdrawal(amount){
+                this.#balance-=amount
+            }
+
+            getbalance(){
+                document.writeln("Current balance is ", this.#balance)
+            }
+        }
+        
+        const acc = new BankAccount()
+        acc.deposit(1000);
+        acc.withdrawal(500)
+        acc.getbalance()
+
+
+
+    </script>
+</body>
+
+</html>

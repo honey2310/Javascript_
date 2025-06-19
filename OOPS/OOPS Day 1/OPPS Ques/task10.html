@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            class Shape {
+                constructor(area) {
+                    this.area = area
+                }
+
+                getarea() {
+                    document.writeln("area is" + " " + this.area + "<BR>")
+                }
+            }
+
+            class Rectangle extends Shape {
+                constructor(length, width) {
+                    super(length * width)
+                }
+            }
+
+            class Circle extends Shape {
+                constructor(radius) {
+                    super(3.14 * radius * radius)
+                }
+            }
+
+             class square extends Shape {
+                constructor(side) {
+                    super(side*side)
+                }
+            }
+
+           const shapes=[
+            new Rectangle(3,4),
+            new Circle(9),
+            new square(2)
+        ]
+
+        shapes.forEach((shape)=>{
+            shape.getarea()
+        })
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class User {
+            #password;
+
+            constructor(username, password) {
+                this.username = username;
+                this.#password = password
+            }
+            checkPassword(inputPassword) {
+                if (inputPassword == this.#password) {
+                    document.writeln("correct password!")
+                }
+                else {
+                    document.writeln("incorrect password")
+                }
+            }
+
+            changePassword(oldPassword, newPassword) {
+                if (oldPassword == this.#password) {
+                    this.#password = newPassword
+                    document.writeln("Change successfully!")
+                } else {
+                    document.writeln("<br> incorrect old password")
+                }
+            }
+        }
+
+        const password = new User("honey", 1234)
+        password.changePassword(1234, 1122)
+        password.checkPassword(1122)
+    </script>
+</body>
+
+</html>

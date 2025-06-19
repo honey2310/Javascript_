@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            greet(){
+                document.writeln("Hello Good morning <br>")
+            }
+        }
+
+        class Student extends Person {
+            study(){
+                document.writeln("I am Pursing Graduation")
+            }
+        }
+
+        const student = new Student()
+        student.greet()
+        student.study()
+
+    </script>
+</body>
+</html>

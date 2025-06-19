@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Calculator{
+            #result
+              constructor(){
+                this.#result=0
+            }
+            add(amount) {
+                this.#result+=amount
+            }
+
+            sub(amount){
+                this.#result-=amount
+            }
+
+            getresult(){
+                document.writeln("result is ", this.#result)
+            }
+        }
+
+        const calc = new Calculator(23)
+        calc.add(12)
+        calc.sub(7)
+        calc.getresult()
+    </script>
+</body>
+</html>

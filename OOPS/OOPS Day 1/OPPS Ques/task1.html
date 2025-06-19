@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {
+            constructor(brand, model) {
+                this.brand = brand;
+                this.model = model;
+            }
+
+            getDetails() {
+                document.writeln("Car brand :", this.brand +"<br>")
+                document.writeln("Car model :", this.model)
+            }
+        }
+
+        const car = new Car("Toyato", "Corolla")
+        car.getDetails()
+    </script>
+</body>
+
+</html>

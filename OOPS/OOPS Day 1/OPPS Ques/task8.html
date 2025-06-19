@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Bird {
+            sound;
+            makeSound(sound) {
+                this.sound = sound
+                document.writeln("Bird sound is ", this.sound + "<br>")
+            }
+        }
+
+        class Sparrow extends Bird {
+        }
+
+        class Parrot extends Bird { }
+
+        const bird1 = new Sparrow()
+        bird1.makeSound("Chirp ! chirp !")
+
+        const bird2 = new Parrot()
+        bird2.makeSound("Squak! hello!")
+
+
+
+    </script>
+</body>
+
+</html>
