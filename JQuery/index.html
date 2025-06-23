@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-box {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+      }
+      #emailpreview {
+        width: 50%;
+        color: #33333341;
+      }
+      #passwordpreview {
+        width: 55%;
+        color: #33333341;
+      }
+
+      .login-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #667eea;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .login-box button:hover {
+        background-color: #5a67d8;
+      }
+
+      .login-box p {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .login-box a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .login-box a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <p id="emailpreview"></p>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <p id="passwordpreview"></p>
+        </div>
+        <button type="submit" id="button">Login</button>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
