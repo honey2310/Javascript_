@@ -70,7 +70,11 @@ ecommerce-app/
 
 ---
 
-## 📸 Screenshots
+## 📸 Screeshot
+
+https://github.com/user-attachments/assets/766c8a2f-2c06-4813-a9a1-e2fe4358a177
+
+reenshots
 
 
 
