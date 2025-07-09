@@ -66,6 +66,10 @@ If the input is valid, the counting will begin ✅.
 ## 🖼️ Example Output
 
 
+https://github.com/user-attachments/assets/1969985a-fefc-4484-b125-7fe0e952053a
+
+
+
 
 ---
 
