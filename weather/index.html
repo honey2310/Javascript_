@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Weather UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .weather-card {
+      background: rgba(15, 23, 42, 0.9);
+      color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .location-info h2 {
+      margin: 0;
+    }
+
+    .search-box {
+      display: flex;
+      background: #1e293b;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      padding: 8px 12px;
+      width: 180px;
+    }
+
+    .search-box button {
+      background: #3b82f6;
+      border: none;
+      padding: 8px 15px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main-weather {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      align-items: center;
+    }
+
+    .temp {
+      font-size: 64px;
+      font-weight: 600;
+    }
+
+    .weather-description {
+      font-size: 1.2rem;
+      margin-top: -10px;
+    }
+
+    .right-info {
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .weather-icon {
+      width: 110px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="weather-card">
+  <div class="top-section">
+    <div class="location-info">
+      <h2 id="heading"></h2>
+      <p id="datetime"></p>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Enter city name" id="input">
+      <button id="search">Search</button>
+    </div>
+  </div>
+
+  <div class="main-weather">
+    <div>
+      <div class="temp"></div>
+      <div class="weather-description"></div>
+    </div>
+    <img class="weather-icon" src="">
+    <div class="right-info">
+      <div class="feels"></div>
+      <div class="hum"></div>
+      <div class="wind"></div>
+    </div>
+  </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
