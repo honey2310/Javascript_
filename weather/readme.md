@@ -51,6 +51,11 @@ OpenWeatherMap API
 # 🔁 Example Output
 
 
+https://github.com/user-attachments/assets/62f8445d-5dfb-4319-b6d2-0ffd59d240a2
+
+
+
+
 # 🔮 Future Enhancements
 
 Add 5-day forecast
