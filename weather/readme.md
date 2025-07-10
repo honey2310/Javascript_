@@ -38,7 +38,7 @@ Enter a city name and press Search to see the weather.
 bash
 Copy
 Edit
-https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=YOUR_API_KEY&units=metric
+
 🔨 Technologies Used
 HTML5
 
