@@ -57,6 +57,10 @@ Filter: Select a cuisine type from the dropdown to narrow recipes
  ## 📷 Demo
 
 
+https://github.com/user-attachments/assets/b7862885-a94d-41dc-86fe-cf8e7956fa3d
+
+
+
 
 
 ## 🛠️ Technologies Used
