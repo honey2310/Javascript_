@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-6">📖 Recipe Manager</h1>
+
+    <!-- Recipe Form -->
+    <form id="recipeForm" class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-xl font-semibold mb-4" id="formTitle">Add New Recipe</h2>
+      <input type="hidden" id="recipeId" />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input id="title" type="text" placeholder="Title" class="border p-2 rounded w-full" required />
+        <input id="imageUrl" type="text" placeholder="Image URL" class="border p-2 rounded w-full" required />
+        <input id="ingredients" type="text" placeholder="Ingredients (comma-separated)" class="border p-2 rounded w-full md:col-span-2" required />
+        <input id="cuisine" type="text" placeholder="Cuisine (e.g. Italian, Indian)" class="border p-2 rounded w-full md:col-span-2" required />
+      </div>
+      <button type="submit" class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Submit</button>
+    </form>
+
+    <!-- Search Bar -->
+    <div class="mb-6">
+      <input id="searchInput" type="text" placeholder="🔍 Search by title or cuisine..." class="w-full p-3 border rounded" />
+    </div>
+
+    <!-- Recipe List -->
+    <div id="recipeList" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Recipes render here -->
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
